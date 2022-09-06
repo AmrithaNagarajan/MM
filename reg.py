@@ -73,3 +73,5 @@ print(y_pred)
 # b = np.log(a)
 # a = math.exp(b)
 
+# r2 = np.corrcoef(x,y)
+
