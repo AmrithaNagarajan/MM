@@ -67,3 +67,9 @@ x0 = np.ones(len(x1))
 x = np.stack((x0,x1,x2), axis = 1)
 y_pred = multiple_lin_reg(x, y, x)
 print(y_pred)
+
+
+
+# b = np.log(a)
+# a = math.exp(b)
+
