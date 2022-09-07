@@ -84,3 +84,20 @@ for i in x_val:
 
 print(y_cap)
 
+
+def f(t,o,x):
+    tck = interpolate.splrep(t, o)
+    return interpolate.splev(x, tck)
+
+
+
+t=[0,8,16,24,32,40]
+o=[14.621,11.843,9.870,8.418,7.305,6.413]
+
+
+print(f(t,o,4), f(t,o,36))
+
+y_cap = f(t,o,t)
+
+plt.plot(t,o,'o',t,y_cap)
+
